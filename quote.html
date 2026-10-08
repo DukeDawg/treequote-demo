@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get a free quote — TreeQuote</title>
+  <meta name="description" content="Answer a few questions, add photos, and see a ballpark price for tree removal, trimming, stump grinding, or planting in about two minutes.">
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body class="quote-page">
+  <div class="demo-bar"><strong>Concept preview</strong> · This estimator works, but nothing you enter is sent anywhere.</div>
+
+  <header class="site-header quote-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="TreeQuote home">
+        <svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 3h24a6 6 0 0 1 6 6v17a6 6 0 0 1-6 6H18l-8 6v-6H8a6 6 0 0 1-6-6V9a6 6 0 0 1 6-6z" fill="#163d31"/><path d="M20 8.5c-4.4 0-7.5 3.2-7.5 6.9 0 3.3 2.6 5.8 6.3 6.1v5h2.4v-5c3.7-.3 6.3-2.8 6.3-6.1 0-3.7-3.1-6.9-7.5-6.9z" fill="#f2a541"/></svg>
+        <span>Tree<em>Quote</em></span>
+      </a>
+      <div class="nav-cta">
+        <span class="help"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg>About 2 minutes</span>
+        <a class="btn btn-ghost btn-sm" href="index.html"><svg class="ic" aria-hidden="true"><use href="#i-x"/></svg>Exit</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" class="container quote-shell">
+    <div>
+      <ol class="progress" aria-label="Progress">
+        <li>Service</li>
+        <li>Details</li>
+        <li>Photos</li>
+        <li>Timing</li>
+        <li>Contact</li>
+      </ol>
+
+      <form id="quote-form" class="wizard" novalidate>
+        <!-- 1. Service -->
+        <section class="step active" data-step="service">
+          <h1>What do you need done?</h1>
+          <p class="step-lede">Pick the closest match. You can add details next.</p>
+          <fieldset class="q">
+            <legend class="sr-only">Service</legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="radio" name="service" value="removal"><span class="opt-body"><span class="opt-icon"><svg class="ic" aria-hidden="true"><use href="#i-removal"/></svg></span><span><b>Tree removal</b><small>Take down a whole tree</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="service" value="trimming"><span class="opt-body"><span class="opt-icon"><svg class="ic" aria-hidden="true"><use href="#i-trimming"/></svg></span><span><b>Trimming &amp; pruning</b><small>Shape, thin, or clear branches</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="service" value="stump"><span class="opt-body"><span class="opt-icon"><svg class="ic" aria-hidden="true"><use href="#i-stump"/></svg></span><span><b>Stump grinding</b><small>Grind out old stumps</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="service" value="planting"><span class="opt-body"><span class="opt-icon"><svg class="ic" aria-hidden="true"><use href="#i-planting"/></svg></span><span><b>Tree planting</b><small>Add new trees to your yard</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="service" value="emergency"><span class="opt-body"><span class="opt-icon"><svg class="ic" aria-hidden="true"><use href="#i-emergency"/></svg></span><span><b>Storm damage</b><small>A fallen or dangerous tree, now</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="service" value="health"><span class="opt-body"><span class="opt-icon"><svg class="ic" aria-hidden="true"><use href="#i-health"/></svg></span><span><b>Tree health check</b><small>Is this tree sick or unsafe?</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <!-- 2. Details -->
+        <section class="step" data-step="details">
+          <h1 data-details-title>Tell us about the tree</h1>
+          <p class="step-lede">Best guesses are fine. Your photos and the arborist fill in the rest.</p>
+
+          <fieldset class="q" data-for="emergency">
+            <legend>What happened?</legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="radio" name="situation" value="structure"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-house"/></svg></span><b>On the house, car, or fence</b><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="situation" value="hanging"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg></span><b>Split or hanging — dangerous</b><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="situation" value="blocking"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-truck"/></svg></span><b>Blocking the driveway or road</b><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="situation" value="down"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg></span><b>Down in the yard</b><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+          <p class="tip-inline" data-for="emergency"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span>If anyone is hurt or a power line is down, call 911 and your utility first. Stay at least 30 feet away from downed lines.</span></p>
+
+          <!-- Removal / trimming / emergency -->
+          <fieldset class="q" data-for="removal trimming emergency">
+            <legend>How many trees?</legend>
+            <div class="options cols-4 seg">
+              <label class="opt"><input type="radio" name="trees" value="1" checked><span class="opt-body">1</span></label>
+              <label class="opt"><input type="radio" name="trees" value="2"><span class="opt-body">2</span></label>
+              <label class="opt"><input type="radio" name="trees" value="3"><span class="opt-body">3</span></label>
+              <label class="opt"><input type="radio" name="trees" value="4"><span class="opt-body">4+</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" data-for="removal trimming emergency">
+            <legend>About how tall? <span class="q-hint">Compare it to your house.</span></legend>
+            <div class="options cols-4">
+              <label class="opt center"><input type="radio" name="height" value="xs"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 24 32" height="18" aria-hidden="true"><path d="M12 2c-5 0-9 4-9 9.5 0 4.6 3.6 8 8 8.4V30h2V19.9c4.4-.4 8-3.8 8-8.4C21 6 17 2 12 2z" fill="currentColor"/></svg></span><span><b>Under 20 ft</b><small>Below the gutters</small></span></span></label>
+              <label class="opt center"><input type="radio" name="height" value="sm"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 24 32" height="27" aria-hidden="true"><path d="M12 2c-5 0-9 4-9 9.5 0 4.6 3.6 8 8 8.4V30h2V19.9c4.4-.4 8-3.8 8-8.4C21 6 17 2 12 2z" fill="currentColor"/></svg></span><span><b>20–40 ft</b><small>About two stories</small></span></span></label>
+              <label class="opt center"><input type="radio" name="height" value="md"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 24 32" height="37" aria-hidden="true"><path d="M12 2c-5 0-9 4-9 9.5 0 4.6 3.6 8 8 8.4V30h2V19.9c4.4-.4 8-3.8 8-8.4C21 6 17 2 12 2z" fill="currentColor"/></svg></span><span><b>40–60 ft</b><small>Above the roof</small></span></span></label>
+              <label class="opt center"><input type="radio" name="height" value="lg"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 24 32" height="48" aria-hidden="true"><path d="M12 2c-5 0-9 4-9 9.5 0 4.6 3.6 8 8 8.4V30h2V19.9c4.4-.4 8-3.8 8-8.4C21 6 17 2 12 2z" fill="currentColor"/></svg></span><span><b>60 ft+</b><small>Towers over it</small></span></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" data-for="removal emergency">
+            <legend>How thick is the trunk? <span class="q-hint">Across, at chest height.</span></legend>
+            <div class="options cols-4">
+              <label class="opt center"><input type="radio" name="trunk" value="xs"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 48 48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="7" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="3.5" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5"/></svg></span><span><b>Under 12 in</b><small>Dinner plate</small></span></span></label>
+              <label class="opt center"><input type="radio" name="trunk" value="sm"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 48 48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="11" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="6" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5"/></svg></span><span><b>12–24 in</b><small>Car tire</small></span></span></label>
+              <label class="opt center"><input type="radio" name="trunk" value="md"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 48 48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="9" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5"/></svg></span><span><b>24–36 in</b><small>Patio table</small></span></span></label>
+              <label class="opt center"><input type="radio" name="trunk" value="lg"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 48 48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="21.5" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="12.5" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5"/><circle cx="24" cy="24" r="5" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/></svg></span><span><b>36 in+</b><small>Even bigger</small></span></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" data-for="removal trimming emergency">
+            <legend>What's close to it? <span class="q-hint">Pick all that apply.</span></legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="checkbox" name="nearby" value="house"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-house"/></svg></span><b>House or building</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="nearby" value="lines"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-bolt"/></svg></span><b>Power lines</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="nearby" value="fence"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-fence"/></svg></span><b>Fence, deck, or driveway</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="nearby" value="access"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-gate"/></svg></span><b>Backyard only or tight gate</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="nearby" value="slope"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-slope"/></svg></span><b>On a slope</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+          <p class="tip-inline" data-tip="lines" hidden><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span>Lines running from the pole to your house are usually fine for our crews. Lines on the pole itself may need the utility — we coordinate that for you.</span></p>
+
+          <fieldset class="q" data-for="removal trimming">
+            <legend>What shape is it in?</legend>
+            <div class="options cols-4 seg">
+              <label class="opt"><input type="radio" name="condition" value="healthy" checked><span class="opt-body">Healthy</span></label>
+              <label class="opt"><input type="radio" name="condition" value="dead"><span class="opt-body">Dead or dying</span></label>
+              <label class="opt"><input type="radio" name="condition" value="leaning"><span class="opt-body">Leaning</span></label>
+              <label class="opt"><input type="radio" name="condition" value="storm"><span class="opt-body">Storm-damaged</span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" data-for="removal emergency">
+            <legend>Grind the stump too?</legend>
+            <div class="options cols-2 keep">
+              <label class="opt"><input type="radio" name="stumpgrind" value="yes"><span class="opt-body"><span><b>Yes, grind it</b><small>Lawn-ready when we leave</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="stumpgrind" value="no" checked><span class="opt-body"><span><b>No, leave it</b><small>Cut flush to the ground</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+
+          <fieldset class="q" data-for="removal emergency">
+            <legend>What about the wood?</legend>
+            <div class="options cols-2 keep">
+              <label class="opt"><input type="radio" name="wood" value="haul" checked><span class="opt-body"><span><b>Haul it all away</b><small>Included in the price</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="wood" value="firewood"><span class="opt-body"><span><b>Leave logs for firewood</b><small>Saves about 10%</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+
+          <!-- Stump -->
+          <fieldset class="q" data-for="stump">
+            <legend>How many stumps?</legend>
+            <div class="options cols-4 seg">
+              <label class="opt"><input type="radio" name="stumps" value="1" checked><span class="opt-body">1</span></label>
+              <label class="opt"><input type="radio" name="stumps" value="2"><span class="opt-body">2</span></label>
+              <label class="opt"><input type="radio" name="stumps" value="3"><span class="opt-body">3</span></label>
+              <label class="opt"><input type="radio" name="stumps" value="4"><span class="opt-body">4+</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q" data-for="stump">
+            <legend>How wide is the biggest one?</legend>
+            <div class="options cols-4">
+              <label class="opt center"><input type="radio" name="stumpsize" value="xs"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 48 48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="7" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="3.5" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5"/></svg></span><span><b>Under 12 in</b><small>Dinner plate</small></span></span></label>
+              <label class="opt center"><input type="radio" name="stumpsize" value="sm"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 48 48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="11" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="6" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5"/></svg></span><span><b>12–24 in</b><small>Car tire</small></span></span></label>
+              <label class="opt center"><input type="radio" name="stumpsize" value="md"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 48 48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="9" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5"/></svg></span><span><b>24–36 in</b><small>Patio table</small></span></span></label>
+              <label class="opt center"><input type="radio" name="stumpsize" value="lg"><span class="opt-body"><span class="glyph"><svg viewBox="0 0 48 48" height="48" aria-hidden="true"><circle cx="24" cy="24" r="21.5" fill="currentColor" fill-opacity=".14" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="24" r="12.5" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1.5"/><circle cx="24" cy="24" r="5" fill="none" stroke="currentColor" stroke-opacity=".35" stroke-width="1.5"/></svg></span><span><b>36 in+</b><small>Even bigger</small></span></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q" data-for="stump">
+            <legend>Anything else? <span class="q-hint">Optional.</span></legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="checkbox" name="stumpextras" value="access"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-gate"/></svg></span><b>Backyard only or tight gate</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="stumpextras" value="backfill"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg></span><b>Haul grindings, add topsoil</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+
+          <!-- Planting -->
+          <fieldset class="q" data-for="planting">
+            <legend>How many trees?</legend>
+            <div class="options cols-4 seg">
+              <label class="opt"><input type="radio" name="plantcount" value="1" checked><span class="opt-body">1</span></label>
+              <label class="opt"><input type="radio" name="plantcount" value="2"><span class="opt-body">2</span></label>
+              <label class="opt"><input type="radio" name="plantcount" value="3"><span class="opt-body">3</span></label>
+              <label class="opt"><input type="radio" name="plantcount" value="4"><span class="opt-body">4+</span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q" data-for="planting">
+            <legend>What size?</legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="radio" name="plantsize" value="small"><span class="opt-body"><span><b>Small · 5–6 ft</b><small>5–7 gallon pot. Budget-friendly and grows in fast.</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="plantsize" value="medium"><span class="opt-body"><span><b>Medium · 8–10 ft</b><small>15–25 gallon. The most popular size.</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="plantsize" value="large"><span class="opt-body"><span><b>Large · 12–15 ft</b><small>Balled and burlapped. Shade and privacy right away.</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="plantsize" value="unsure"><span class="opt-body"><span><b>Not sure</b><small>An arborist will recommend a size for the spot.</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q" data-for="planting">
+            <legend>Extras <span class="q-hint">Optional.</span></legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="checkbox" name="plantextras" value="species" checked><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-leaf"/></svg></span><b>Help me pick the species</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="plantextras" value="removeold"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-stump"/></svg></span><b>Remove an old tree or stump first</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+
+          <!-- Health -->
+          <fieldset class="q" data-for="health">
+            <legend>What are you noticing? <span class="q-hint">Pick all that apply.</span></legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="checkbox" name="concerns" value="thinning"><span class="opt-body"><b>Leaves thinning or dying early</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="concerns" value="cracks"><span class="opt-body"><b>Cracks, cavities, or mushrooms</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="concerns" value="leaning"><span class="opt-body"><b>Leaning more than before</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="concerns" value="falling"><span class="opt-body"><b>Branches dropping</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="concerns" value="pests"><span class="opt-body"><b>Bugs, holes, or oozing sap</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="checkbox" name="concerns" value="general"><span class="opt-body"><b>Just want a checkup</b><span class="opt-check box"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+          <fieldset class="q" data-for="health">
+            <legend>What do you need from the visit?</legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="radio" name="report" value="no" checked><span class="opt-body"><span><b>A walkthrough</b><small>The arborist walks the tree with you and explains.</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="report" value="yes"><span class="opt-body"><span><b>A written report</b><small>For insurance, an HOA, or a home sale.</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+        </section>
+
+        <!-- 3. Photos -->
+        <section class="step" data-step="photos">
+          <h1>Add a few photos</h1>
+          <p class="step-lede">Photos tighten your price range and let most jobs skip the site visit. Two or three is plenty.</p>
+          <label class="dropzone" for="photo-input">
+            <span class="ic-wrap"><svg class="ic" aria-hidden="true"><use href="#i-camera"/></svg></span>
+            <b>Tap to add photos</b>
+            <span>or drag them here · JPG, PNG, or HEIC</span>
+            <input id="photo-input" class="sr-only" type="file" accept="image/*" multiple>
+          </label>
+          <div class="thumbs" data-thumbs></div>
+          <button type="button" class="sample-link" data-samples>No photos handy? Try it with sample photos</button>
+
+          <div class="ai-check" data-ai hidden>
+            <div class="ai-check-head"><svg class="ic" aria-hidden="true"><use href="#i-sparkle"/></svg>Reading your photos<span class="tagline">AI preview</span></div>
+            <ul data-ai-list></ul>
+            <p class="ai-result" data-ai-result hidden></p>
+          </div>
+
+          <div class="photo-tips">
+            <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-image"/></svg><span><b>The whole tree</b>Step back so we see all of it, plus the house next to it.</span></div>
+            <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-ruler"/></svg><span><b>The base of the trunk</b>A close-up with something for scale, like a shoe.</span></div>
+            <div class="tip"><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span><b>Problem spots</b>Cracks, dead limbs, or anything over the roof.</span></div>
+          </div>
+        </section>
+
+        <!-- 4. Timing -->
+        <section class="step" data-step="timing">
+          <h1>When and where?</h1>
+          <p class="step-lede">This helps us match you with a crew that's nearby and free when you need them.</p>
+          <fieldset class="q">
+            <legend>How soon?</legend>
+            <div class="options cols-2">
+              <label class="opt"><input type="radio" name="urgency" value="emergency"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-emergency"/></svg></span><span><b>Emergency</b><small>Need help today</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="urgency" value="soon"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-clock"/></svg></span><span><b>Soon</b><small>Within 1–2 weeks</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="urgency" value="flexible"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-calendar"/></svg></span><span><b>Flexible</b><small>Within a month · saves 5%</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+              <label class="opt"><input type="radio" name="urgency" value="planning"><span class="opt-body"><span class="opt-icon sm"><svg class="ic" aria-hidden="true"><use href="#i-clipboard"/></svg></span><span><b>Just planning</b><small>Getting prices for later</small></span><span class="opt-check"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg></span></span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="zip">ZIP code of the property</label>
+            <div class="field-icon" style="max-width:260px">
+              <svg class="ic" aria-hidden="true"><use href="#i-pin"/></svg>
+              <input class="input" id="zip" name="zip" inputmode="numeric" autocomplete="postal-code" maxlength="5" placeholder="e.g. 30305">
+            </div>
+          </div>
+          <fieldset class="q">
+            <legend>Property type</legend>
+            <div class="options cols-4 seg">
+              <label class="opt"><input type="radio" name="property" value="house" checked><span class="opt-body">House</span></label>
+              <label class="opt"><input type="radio" name="property" value="hoa"><span class="opt-body">Townhome / HOA</span></label>
+              <label class="opt"><input type="radio" name="property" value="rental"><span class="opt-body">Rental</span></label>
+              <label class="opt"><input type="radio" name="property" value="commercial"><span class="opt-body">Business</span></label>
+            </div>
+          </fieldset>
+          <div class="field">
+            <label for="notes">Anything the crew should know? <span class="q-hint">Optional</span></label>
+            <textarea class="input" id="notes" name="notes" placeholder="Gate code, dogs in the yard, HOA rules, a neighbor's fence…"></textarea>
+          </div>
+        </section>
+
+        <!-- 5. Contact -->
+        <section class="step" data-step="contact">
+          <h1>Where should we send your quote?</h1>
+          <p class="step-lede">An arborist reviews your request and sends one firm quote. No spam, no sales calls.</p>
+          <div class="field-row">
+            <div class="field"><label for="first">First name</label><input class="input" id="first" name="first" autocomplete="given-name"></div>
+            <div class="field"><label for="last">Last name <span class="q-hint">Optional</span></label><input class="input" id="last" name="last" autocomplete="family-name"></div>
+          </div>
+          <div class="field-row">
+            <div class="field"><label for="email">Email</label><input class="input" id="email" name="email" type="email" autocomplete="email"></div>
+            <div class="field"><label for="phone">Mobile phone</label><input class="input" id="phone" name="phone" type="tel" autocomplete="tel" placeholder="(555) 555-0123"></div>
+          </div>
+          <fieldset class="q">
+            <legend>Best way to reach you</legend>
+            <div class="options cols-3 seg">
+              <label class="opt"><input type="radio" name="contact" value="text" checked><span class="opt-body">Text</span></label>
+              <label class="opt"><input type="radio" name="contact" value="call"><span class="opt-body">Call</span></label>
+              <label class="opt"><input type="radio" name="contact" value="email"><span class="opt-body">Email</span></label>
+            </div>
+          </fieldset>
+          <p class="consent">By continuing, you agree that TreeQuote may contact you about this request. We share your details with one crew, and only after you approve their quote.</p>
+          <div class="demo-note"><svg class="ic" aria-hidden="true"><use href="#i-info"/></svg><span><b>Concept demo:</b> nothing you enter leaves this browser tab.</span></div>
+        </section>
+
+        <!-- Done -->
+        <section class="step" data-step="done" aria-live="polite"></section>
+
+        <div class="wizard-nav" data-nav>
+          <button type="button" class="btn btn-ghost" data-back hidden><svg class="ic" aria-hidden="true"><use href="#i-arrow-left"/></svg>Back</button>
+          <span class="spacer"></span>
+          <span class="form-error" role="alert" data-error><svg class="ic" aria-hidden="true"><use href="#i-alert"/></svg><span></span></span>
+          <button type="submit" class="btn btn-primary btn-lg" data-next>Continue <svg class="ic" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+        </div>
+      </form>
+    </div>
+
+    <aside class="estimate" aria-label="Your ballpark estimate" aria-live="polite">
+      <h2>Your ballpark estimate</h2>
+      <div class="est-range empty" data-est-range>$— – $—</div>
+      <p class="est-sub" data-est-sub>Answer a few questions to see a price range.</p>
+      <ul class="est-lines" data-est-lines></ul>
+      <p class="est-widen" data-est-widen hidden>Range is about 10% wider until you add photos.</p>
+      <div class="confidence">
+        <div class="conf-label"><span>Estimate confidence</span><b data-conf-label>—</b></div>
+        <div class="conf-bar" data-conf><span></span><span></span><span></span></div>
+        <div class="conf-hint" data-conf-hint>Pick a service to start.</div>
+      </div>
+      <div class="est-promise">
+        <div><svg class="ic" aria-hidden="true"><use href="#i-clipboard"/></svg>Reviewed by an arborist before you're matched</div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-lock"/></svg>Shared with one crew, only after you approve</div>
+        <div><svg class="ic" aria-hidden="true"><use href="#i-tag"/></svg>Free, with no obligation</div>
+      </div>
+    </aside>
+  </main>
+
+  <div class="est-mini" aria-hidden="true">
+    <div><small>Ballpark</small><b data-mini-range>Answer to see</b></div>
+    <div class="conf-bar" data-conf-mini><span></span><span></span><span></span></div>
+  </div>
+
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/quote.js"></script>
+</body>
+</html>
